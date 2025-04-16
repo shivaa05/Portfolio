@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main{
+    background: linear-gradient(to right,#E4EFE7,#FDFAF6);
+    height: 92vh;
+    width: 100vw;
+}
+.nav{
+    background: linear-gradient(to right,rgb(0, 0, 0),rgb(168, 168, 146));
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+    padding-inline: 45px;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .right li{
+    height: 9vh;
+    padding-inline: 15px;
+    display: flex;
+    align-items: center;
+}
+.nav .right .active {
+    background: linear-gradient(to top,rgb(31, 30, 30),rgba(208, 208, 206, 0.1));
+}
+.nav .title{
+    font-size: 30px;
+}
+.portfolio-logo{
+    height: 200px;
+    object-fit: cover;
+}
+.right{    
+    display: flex;
+    gap: 5px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+    margin-inline: 5vh;
+}
+.content  .left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70vw;
+    padding: 10px;
+}
+.left .name{
+    color: rgb(2, 10, 16);
+    font-size: 50px;
+    font-weight: 900;
+}
+.left .desc {
+    color: #B03052;
+    padding-block: 8px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.intro{
+    color: rgb(3, 25, 50);
+    font-size: 18px;
+    font-weight: 700;
+}
+.icons{
+    margin-top: 30px;
+}
+.content .right{
+    width: 20vw;
+    height: 45vh;
+    margin-right: 40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px black;
+}
+.footer{
+    background: linear-gradient(to left,rgb(0, 0, 0),rgb(168, 168, 146));
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 8vh;
+    padding-inline: 50px;
+}
+.image{
+    width: 50px;
+    height: 45px;
+}
+.footer .social .image{
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.social .image:hover{
+    transform: scale(1.12);
+}
+.contact{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    right: 50px;
+    font-size: 20px;
+}
