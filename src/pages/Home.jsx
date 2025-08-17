@@ -48,7 +48,7 @@ const Home = () => {
       </div>
 
       {/* Right Section */}
-      <div className="w-[45%] border-[1px] border-indigo-900 rounded-md min-h-96 bg-gradient-to-r from-[#0d1224] to-[#131960] flex flex-col">
+      <div className="w-[45%] border-[1px] border-indigo-900 rounded-md min-h-96 bg-gradient-to-r from-[#0d1224] to-[#131960] flex flex-col ">
         {/* Header */}
         <div className="h-12 border-b-[1px] border-b-lime-600 flex items-center gap-2 ps-5">
           <span className="h-3 w-3 rounded-full bg-red-500"></span>

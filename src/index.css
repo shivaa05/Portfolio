@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   object-fit: cover;
-  overflow: hidden;
+  /* overflow: hidden; */
   height: 100%;
 }
 
@@ -58,4 +58,6 @@
 
 .code-editor{
   font-family: "Nata Sans";
+  background-image: url('./blur-23.svg');
+  background-size: cover;
 }

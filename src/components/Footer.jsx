@@ -1,8 +1,9 @@
-import React from 'react'
+import React from "react";
 import { FaGithub, FaInstagram, FaPhoneAlt } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
 import { SiLeetcode } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -16,32 +17,29 @@ const Footer = () => {
 
         {/* social media icons */}
         <div className="text-2xl flex gap-4 h-[100%] items-center-safe">
-          <span className="text-xl">Contact us: </span>
-          <a href="https://github.com/shivaa05?tab=repositories" target="blank">
+          <span className="text-xl">Contact me: </span>
+          <Link to="https://github.com/shivaa05?tab=repositories">
             <FaGithub />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/shiva-verma-700b9228b/"
-            target="blank"
-          >
+          </Link>
+          <Link to="https://www.linkedin.com/in/shiva-verma-700b9228b/">
             <FaLinkedin />
-          </a>
-          <a href="https://leetcode.com/u/shivaverma32/" target="blank">
+          </Link>
+          <Link to="https://leetcode.com/u/shivaverma32/">
             <SiLeetcode />
-          </a>
-          <a href="https://www.instagram.com/itz_shiva_5/" target="blank">
+          </Link>
+          <Link to="https://www.instagram.com/itz_shiva_5/">
             <FaInstagram />
-          </a>
-          <a href="mailto:shivaverma3211.a@gmail.com" target="blank">
+          </Link>
+          <Link to="mailto:shivaverma3211.a@gmail.com">
             <BiLogoGmail />
-          </a>
-          <a href="tel:+917523924452" target="blank">
+          </Link>
+          <Link to="tel:+917523924452">
             <FaPhoneAlt />
-          </a>
+          </Link>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Footer
+export default Footer;
