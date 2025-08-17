@@ -13,12 +13,7 @@ const Home = () => {
           MERN Stack Developer skilled in{" "}
           <span className="text-lime-300">React, Node, MongoDB,</span> and{" "}
           <span className="text-lime-300">Express, </span>
-          passionate about{" "}
-          <span className="text-red-400">
-            building dynamic, scalable, responsive web applications
-          </span>{" "}
-          with <span className="text-pink-400">clean UI, problem-solving,</span>{" "}
-          and <span className="text-pink-400">innovative solutions.</span>
+          passionate about building dynamic, scalable, responsive web applications withclean UI, problem-solving, and innovative solutions.
         </p>
 
         <div className="mt-6 flex gap-10">

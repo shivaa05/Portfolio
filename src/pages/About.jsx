@@ -1,8 +1,4 @@
 import React from "react";
-import experience from "../assets/lottie/code.json";
-import AnimationLottie from "../components/helper/animation-lottie";
-import GlowCard from "../components/helper/glow-card";
-
 const About = () => {
   return (
     <div className="h-auto py-24 px-15">
