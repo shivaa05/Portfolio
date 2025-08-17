@@ -1,27 +1,28 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <div className="header flex justify-between items-center h-14 text-lg w-full px-20 uppercase bg-[#0d1224]">
-      <div className="text-fuchsia-400 font-extrabold text-3xl ">
+    <div className="header flex justify-between items-center h-16 text-lg w-full px-20 uppercase bg-[#0d1224] sticky top-0">
+      <div className="text-fuchsia-400 font-extrabold text-3xl overflow-hidden ">
         SHIVA VERMA
       </div>
       <div className="right flex justify-between w-1/3">
-        <a href="/" className="">
+        <NavLink to="/" className="">
           Home
-        </a>
-        <a href="/" className="">
+        </NavLink>
+        <NavLink to="/about" className="">
           About
-        </a>
-        <a href="/" className="">
+        </NavLink>
+        <NavLink to="/" className="">
           Skills
-        </a>
-        <a href="/" className="">
+        </NavLink>
+        <NavLink to="/" className="">
           Projects
-        </a>
-        <a href="/" className="">
+        </NavLink>
+        <NavLink to="/" className="">
           Contact
-        </a>
+        </NavLink>
       </div>
     </div>
   );

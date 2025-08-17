@@ -1,19 +1,39 @@
 @import "tailwindcss";
+
+
 *{
   box-sizing: border-box;
-  overflow-y: hidden;
+}
+::-webkit-scrollbar{
+  display: none;
 }
 .wrapper{
   background: #0d1224;
-  background-image: url("../public/hero.svg");
+  background-image: url("/hero.svg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
   object-fit: cover;
+  overflow: hidden;
+  height: 100%;
 }
+
+.header a{
+  padding: 5px 3px;
+  
+}
+
+.active{
+  border-bottom: 3px solid #3f54a0;
+  color: #869ffb;
+  border-radius: 5px;
+}
+
 .name-heading{
   animation: typing 10s infinite forwards;
   overflow: hidden;
   white-space: nowrap;
 }
+
 
 @keyframes typing {
   0%{
@@ -34,4 +54,8 @@
     width: 0ch;
     opacity: 0;
   }
+}
+
+.code-editor{
+  font-family: "Nata Sans";
 }
