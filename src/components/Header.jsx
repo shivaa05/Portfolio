@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
   return (
     <div className="header flex justify-between items-center h-16 text-lg w-full px-20 uppercase absolute top-0">
-      <div className="text-sky-200 font-extrabold text-3xl overflow-hidden ">
+      <div className="left text-sky-200 font-extrabold text-3xl overflow-hidden ">
         SHIVA VERMA
       </div>
       <div className="right flex justify-between w-1/3">

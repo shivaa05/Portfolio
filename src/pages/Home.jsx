@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="flex px-20 pt-10 justify-between mt-15 ">
+    <div className="flex px-20 pt-10 justify-between mt-15 home">
       {/* Left Section */}
-      <div className="flex flex-col w-[40%] pt-10">
+      <div className="flex flex-col w-[40%] pt-10 left">
         <h1 className=" name-heading text-5xl font-bold mb-4">
           Hello, I'm{" "}
           <span className="text-cyan-400 font-extrabold ">Shiva Verma</span>
@@ -34,22 +34,22 @@ const Home = () => {
 
 
         <div className="mt-7">
-          <Link to="/about" className="min-w-36 border-[1px] border-cyan-200 px-5 rounded-full py-[6px] cursor-pointer text-xl mr-10 ">
+          <Link to="/about" className="btn min-w-36 border-[1px] border-cyan-200 px-5 rounded-full py-[6px] cursor-pointer text-xl mr-10 ">
             {" "}
             About me
           </Link>
-          <Link to="/contact" className="min-w-36 border-[1px] border-cyan-200 bg-gradient-to-r from-indigo-600 to-pink-900 px-5 rounded-full py-[6px] cursor-pointer text-xl mr-10 ">
+          <Link to="/contact" className="btn min-w-36 border-[1px] border-cyan-200 bg-gradient-to-r from-indigo-600 to-pink-900 px-5 rounded-full py-[6px] cursor-pointer text-xl mr-10 ">
             {" "}
             Contact me
           </Link>
         </div>
 
-        <p className="mt-7 italic text-xl text-rose-400">"Code is my craft, creativity is my tool."</p>
+        <p className=" quote mt-7 italic text-xl text-rose-400">"Code is my craft, creativity is my tool."</p>
 
       </div>
 
       {/* Right Section */}
-      <div className="w-[45%] border-[1px] border-indigo-900 rounded-md min-h-96 bg-gradient-to-r from-[#0d1224] to-[#131960] flex flex-col ">
+      <div className="right w-[45%] border-[1px] border-indigo-900 rounded-md min-h-96 bg-gradient-to-r from-[#0d1224] to-[#131960] flex flex-col ">
         {/* Header */}
         <div className="h-12 border-b-[1px] border-b-lime-600 flex items-center gap-2 ps-5">
           <span className="h-3 w-3 rounded-full bg-red-500"></span>

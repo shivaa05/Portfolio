@@ -7,16 +7,16 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="w-full absolute bottom-0 h-16 bg-[#0d1224] overflow-hidden">
+    <div className="footer w-full absolute bottom-0 h-16 bg-[#0d1224] overflow-hidden">
       <hr />
-      <div className="flex h-[100%] justify-between items-center my-auto px-10">
-        <div>
+      <div className=" flex h-[100%] justify-between items-center my-auto px-10">
+        <div className="left">
           ⓒ Developer portfolio by{" "}
           <span className="text-fuchsia-400 font-bold">Shiva Verma </span>
         </div>
 
         {/* social media icons */}
-        <div className="text-2xl flex gap-4 h-[100%] items-center-safe">
+        <div className="right text-2xl flex gap-4 h-[100%] items-center-safe">
           <span className="text-xl">Contact me: </span>
           <Link to="https://github.com/shivaa05?tab=repositories">
             <FaGithub />
