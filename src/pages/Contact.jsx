@@ -27,7 +27,7 @@ const Contact = () => {
     }
   };
   return (
-    <div className="pt-16 pb-36 h-auto">
+    <div className="pt-28 pb-36 h-auto">
       <div className="flex gap-20 px-24">
         <div className="min-w-[45%] pt-10 flex flex-col ">
           <img src="five.svg" alt="image" className="h-96" />

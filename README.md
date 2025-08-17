@@ -1,44 +1,34 @@
-# Shiva Verma | Developer Portfolio
+# 🌐 Personal Portfolio Website
 
-Welcome to my personal developer portfolio! This project showcases my skills, projects, and contact information in a clean, interactive, and visually appealing interface.
-
----
-
-## 💻 About Me
-
-Hello, I'm **Shiva Verma** – a **MERN Stack Developer** passionate about building **dynamic, scalable, and responsive web applications**.  
-
-I specialize in:  
-- **Frontend:** React, HTML, CSS, JavaScript, TailwindCSS, Bootstrap  
-- **Backend:** Node.js, Express  
-- **Database:** MongoDB, MySQL  
-
-I focus on creating **clean UI, problem-solving solutions, and innovative applications**.  
-
-> "Code is my craft, creativity is my tool."
+This is my **personal portfolio website** built using **React.js** and styled with modern UI practices.  
+It showcases my skills, projects, and experience as a developer.  
+The website is deployed on **Vercel** for fast and reliable hosting.  
 
 ---
 
-## 📊 Stats
+## ✨ Features
 
-| Category           | Count |
-|-------------------|-------|
-| LeetCode Problems | 600+  |
-| Projects          | 5+    |
-| CGPA              | 8.5   |
+- 🏠 **Home Page** – Introduction and quick overview  
+- 👨‍💻 **About Section** – Skills, background, and interests  
+- 📂 **Projects** – Showcasing selected projects with details  
+- 📬 **Contact Form** – Integrated with [Formspree](https://formspree.io/) for form submissions  
+- ⚡ **Fast Deployment** – Hosted on [Vercel](https://vercel.com/)  
 
 ---
 
-## 🛠 Skills & Tools
+## 🛠️ Tech Stack
 
-```javascript
-const Shiva = {
-  name: "Shiva Verma",
-  skills: [
-    'C', 'C++', 'HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Express', 'MongoDB', 'MySQL', 'TailwindCSS', 'Bootstrap'
-  ],
-  problemSolver: true,
-  hardWorker: true,
-  quickLearner: true,
-  moreSkills: ['Critical thinking', 'Leadership']
-};
+- **Frontend:** React.js, Tailwind CSS (or your CSS framework)  
+- **Icons & Animations:** React Icons, Lottie / Framer Motion  
+- **Deployment:** Vercel  
+- **Form Handling:** Formspree  
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally:
+
+1. Clone the repository  
+   ```bash
+  https://github.com/shivaa05/Portfolio.git

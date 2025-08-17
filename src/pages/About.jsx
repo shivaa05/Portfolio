@@ -1,19 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const About = () => {
   return (
-    <div className="h-auto py-24 px-15">
+    <div className="h-auto py-24 px-15 pt-36">
       <div className="flex gap-14 pb-24">
-        <div className="w-44 relative">
+        <div className="w-28 relative">
           <hr className="transform rotate-z-90 absolute w-48 origin-left left-20 top-14 border-rose-500 border-2 " />
-          <button className=" rotate-z-[90deg] absolute origin-left bg-rose-500 left-20 top-8 w-28 py-1 text-lg rounded-lg">
+          <Link to="/contact" className="cursor-pointer pl-[10px] rotate-z-[90deg] absolute origin-left bg-rose-500 left-20 top-8 w-28 py-1 text-lg rounded-lg">
             Contact me
-          </button>
+          </Link>
         </div>
-        <div className="h-[280px] w-[254px] bg-red-500 rounded-lg">
+        <div className="h-[280px] w-[280px] bg-black rounded-lg">
           <img
-            src="./profile.jpg"
+            src="./my-avatar.png"
             alt="profile"
-            className="h-full w-full object-cover top-0 rounded-lg"
+            className="h-full w-full object-contain rounded-lg"
           />
         </div>
         <div className=" overflow-y-scroll h-full w-1/2 ml-28 mt-4 text-2xl ">

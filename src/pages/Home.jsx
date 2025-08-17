@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="flex px-20 justify-between mt-15 ">
+    <div className="flex px-20 pt-10 justify-between mt-15 ">
       {/* Left Section */}
       <div className="flex flex-col w-[40%] pt-10">
         <h1 className=" name-heading text-5xl font-bold mb-4">
@@ -33,14 +34,14 @@ const Home = () => {
 
 
         <div className="mt-7">
-          <button className="min-w-36 border-[1px] border-cyan-200 px-5 rounded-full py-[6px] cursor-pointer text-xl mr-10 ">
+          <Link to="/about" className="min-w-36 border-[1px] border-cyan-200 px-5 rounded-full py-[6px] cursor-pointer text-xl mr-10 ">
             {" "}
             About me
-          </button>
-          <button className="min-w-36 border-[1px] border-cyan-200 bg-gradient-to-r from-indigo-600 to-pink-900 px-5 rounded-full py-[6px] cursor-pointer text-xl mr-10 ">
+          </Link>
+          <Link to="/contact" className="min-w-36 border-[1px] border-cyan-200 bg-gradient-to-r from-indigo-600 to-pink-900 px-5 rounded-full py-[6px] cursor-pointer text-xl mr-10 ">
             {" "}
-            Projects
-          </button>
+            Contact me
+          </Link>
         </div>
 
         <p className="mt-7 italic text-xl text-rose-400">"Code is my craft, creativity is my tool."</p>
