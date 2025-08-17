@@ -2,9 +2,9 @@ import React from 'react'
 
 const Skills = () => {
   return (
-    <div className="pt-24 px-15">
-      <div className="flex gap-24">
-        <div className="w-2/3 text-2xl pt-10">
+    <div className="skills pt-24 px-15">
+      <div className="skill flex gap-24">
+        <div className="intro w-2/3 text-2xl pt-10">
           <h2 className="text-4xl text-sky-400 mb-4">Introduction : </h2>
           "My skills reflect a balance of strong fundamentals in computer
           science, hands-on experience in full-stack development,
@@ -15,9 +15,9 @@ const Skills = () => {
         <img src="./six.svg" alt="image" className="h-72" />
       </div>
 
-      <div className="flex gap-24">
+      <div className=" skill-rev flex gap-24">
         <img src="eduBlue.svg" alt="" className="h-96 mt-[-50px]" />
-        <div className="w-2/3 text-2xl pt-10">
+        <div className="intro w-2/3 text-2xl pt-10">
           <h2 className="text-4xl text-sky-400 mb-4">
             Programming Languages :
           </h2>
@@ -32,8 +32,8 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className="flex gap-24">
-        <div className="w-2/3 text-xl pt-12">
+      <div className="skill flex gap-24">
+        <div className="intro w-2/3 text-xl pt-12">
           <h2 className="text-4xl text-sky-400 mb-4">
             Frontend, Backend & Databases:
           </h2>
@@ -64,9 +64,9 @@ const Skills = () => {
         <img src="expBlue.svg" alt="" className="h-96 mt-2" />
       </div>
 
-      <div className="flex gap-24">
+      <div className="skill-rev flex gap-24">
         <img src="seven.svg" alt="" className="h-96 mt-6" />
-        <div className="w-2/3 text-xl pt-16">
+        <div className="intro w-2/3 text-xl pt-16">
           <h2 className="text-4xl text-sky-400 mb-4">Additional Skills:</h2>
           <ul className="list-disc list-inside pl-5">
             <li>
@@ -90,7 +90,7 @@ const Skills = () => {
         </div>
       </div>
 
-      <p className='mt-5 mb-5 w-full text-center text-lg italic text-red-400'>“Technology evolves every day — and so do I, sharpening my skills to transform creative ideas into impactful digital solutions.”</p>
+      <p className='quote mt-5 mb-5 w-full text-center text-lg italic text-red-400'>“Technology evolves every day — and so do I, sharpening my skills to transform creative ideas into impactful digital solutions.”</p>
     </div>
   );
 }

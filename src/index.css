@@ -64,10 +64,10 @@
 
 @media (max-width:500px) {
   .header{
-    height: 40px;
-    font-size: 16px;
-    padding: 0;
-    margin-bottom: 0;
+    height: 50px;
+    font-size: 18px;
+    padding: 10px;
+    background: #0d1224;
   }
   .header .left{
     display: none;
@@ -111,9 +111,10 @@
   .code-editor{
     padding: 10px;
   }
-
+  
   .footer{
-    height: 50px;
+    height: 60px;
+    padding-bottom: 10px;
   }
   .footer .left{
     display: none;
@@ -126,4 +127,107 @@
   .footer .right span{
     font-size: 18px;
   }
+
+  /* About */
+  .about{
+    padding: 80px 10px;
+  }
+  .about .intro{
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 40px;
+  }
+  .about .contact{
+    display: none;
+  }
+  .about .img-cont{
+    display: none;
+    height: 200px;
+    width: 200px;
+  }
+  .about img{
+    height: 300px;
+    padding: 0;
+    margin: 0;
+  }
+  .exp{
+    display: none;
+  }
+  .about h2{
+    font-size: 22px;
+  }
+  .about .desc{
+    padding-block: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .skills{
+    padding: 30px 10px;
+  }
+  .skills .skill,.skill-rev{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .skill-rev{
+    flex-direction: column-reverse;
+  }
+  .skill h2,.skill-rev h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .skill .intro,.skill-rev .intro{
+    font-size: 16px;
+    width: 100%;
+  }
+  .skills img{
+    height: 250px;
+    margin: 0;
+  }
+  .skills .quote{
+    font-size: 16px;
+    padding-bottom: 30px;
+  }
+
+
+  .contact-cont{
+    padding: 70px 10px;
+
+  }
+  .contact-cont .contact{
+    flex-direction: column-reverse;
+    gap: 0;
+    padding:30px 0;
+  }
+  .contact-cont .contact form{
+    width: 100%;
+  }
+
+  form label{
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  form input,textarea{
+    font-size: 16px;
+    padding: 4px 8px;
+    margin-bottom: 10px;
+  }
+  form button{
+    margin-top: 10px;
+  }
+
+  .contact-cont .contact a{
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .icons-cont{
+    gap: 10px;
+  }
+  .contact img{
+    height: 250px;
+    padding-bottom: 30px;
+  }
+
 }

@@ -2,22 +2,25 @@ import React from "react";
 import { Link } from "react-router-dom";
 const About = () => {
   return (
-    <div className="h-auto py-24 px-15 pt-36">
-      <div className="flex gap-14 pb-24">
-        <div className="w-28 relative">
-          <hr className="transform rotate-z-90 absolute w-48 origin-left left-20 top-14 border-rose-500 border-2 " />
-          <Link to="/contact" className="cursor-pointer pl-[10px] rotate-z-[90deg] absolute origin-left bg-rose-500 left-20 top-8 w-28 py-1 text-lg rounded-lg">
+    <div className="about h-auto py-24 px-15 pt-36">
+      <div className="intro flex gap-14 pb-24">
+        <div className="contact w-28 relative">
+          <hr className=" transform rotate-z-90 absolute w-48 origin-left left-20 top-14 border-rose-500 border-2 " />
+          <Link
+            to="/contact"
+            className=" cursor-pointer pl-[10px] rotate-z-[90deg] absolute origin-left bg-rose-500 left-20 top-8 w-28 py-1 text-lg rounded-lg"
+          >
             Contact me
           </Link>
         </div>
-        <div className="h-[280px] w-[280px] bg-black rounded-lg">
+        <div className="img-cont h-[280px] w-[280px] bg-black rounded-lg">
           <img
             src="./my-avatar.png"
             alt="profile"
             className="h-full w-full object-contain rounded-lg"
           />
         </div>
-        <div className=" overflow-y-scroll h-full w-1/2 ml-28 mt-4 text-2xl ">
+        <div className="desc overflow-y-scroll h-full w-1/2 ml-28 mt-4 text-2xl ">
           <h2 className="text-4xl mb-3 text-sky-500">About Me : </h2>I am{" "}
           <span className="text-rose-400">Shiva Verma</span>, a{" "}
           <span className="text-blue-400">passionate Software Developer</span>{" "}
@@ -32,8 +35,8 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex gap-24">
-        <div className="text-2xl py-20 w-2/3">
+      <div className="flex intro gap-24">
+        <div className="desc text-2xl py-20 w-2/3">
           <h2 className="text-4xl mb-4 text-sky-500">
             Professional Summary :{" "}
           </h2>
@@ -51,12 +54,12 @@ const About = () => {
           and
           <span className="text-yellow-500"> user experience.</span>
         </div>
-        <img src="./expBlue.svg" alt="table" className="h-96" />
+        <img src="./expBlue.svg" alt="table" className="exp h-96" />
       </div>
 
-      <div className="flex gap-24 pb-14">
+      <div className="intro flex gap-24 pb-14">
         <img src="./eduBlue.svg" alt="table" className="h-96" />
-        <div className="text-2xl py-20 w-2/3">
+        <div className="desc text-2xl py-20 w-2/3">
           <h2 className="text-4xl mb-4 text-sky-500">Technical Skills : </h2>
           <ul className="list-disc list-inside pl-5">
             <li>
@@ -83,29 +86,19 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex gap-24">
-        <div className="text-2xl pt-20 w-2/3">
+      <div className="intro flex gap-24">
+        <div className="desc text-2xl pt-20 w-2/3">
           <h2 className="text-4xl mb-4 text-sky-500">My Vision : </h2>
           My goal is to contribute to innovative projects that make a real-world
           impact while continuously growing as a developer. I aim to master
           full-stack development, implement scalable solutions, and bring
           creative ideas to life through clean, efficient code.
-          <p className="text-rose-300 italic mt-10 text-lg">"Where logic meets creativity — that's software engineering."</p>
+          <p className="text-rose-300 italic mt-10 text-lg">
+            "Where logic meets creativity — that's software engineering."
+          </p>
         </div>
         <img src="expBlue.svg" alt="table" className="h-96" />
       </div>
-
-      {/* <div className=" flex ">
-        <div>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius culpa
-          praesentium cumque ducimus officiis sint nulla animi tempore maxime,
-          quas minima soluta. Unde, tenetur. Sunt repellat placeat similique
-          modi saepe. lorem100
-        </div>
-          <div className="w-full h-full ml-200px">
-            <AnimationLottie animationPath={experience} className="p-32 bg-amber-700" />
-        </div>
-      </div> */}
     </div>
   );
 };

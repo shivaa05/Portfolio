@@ -27,11 +27,11 @@ const Contact = () => {
     }
   };
   return (
-    <div className="pt-28 pb-36 h-auto">
-      <div className="flex gap-20 px-24">
+    <div className="contact-cont pt-28 pb-36 h-auto">
+      <div className="contact flex gap-20 px-24">
         <div className="min-w-[45%] pt-10 flex flex-col ">
           <img src="five.svg" alt="image" className="h-96" />
-          <div className="text-4xl flex gap-5 h-[100%] items-center-safe justify-center">
+          <div className=" icons-cont text-4xl flex gap-5 h-[100%] items-center-safe justify-center">
             <Link
               to="https://github.com/shivaa05?tab=repositories"
               className="bg-zinc-700 px-3 py-3 rounded-full"
