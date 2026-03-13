@@ -14,3 +14,17 @@ body {
 .bg{
   background: rgb(10 10 14);
 }
+
+.cursor{
+  background: radial-gradient(circle, rgba(156, 195, 255, 0.1) 2%, transparent 70%);
+}
+
+.cursor::after{
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink{
+  0%,100%{opacity:1}
+  50%{opacity:0}
+}
