@@ -30,52 +30,73 @@ const Skills = () => {
     );
   });
 
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".skills",
+        start: "top 90%",
+        end: "top 60%",
+        scrub: 2,
+      },
+    });
+
+    tl.from(".h1skill", {
+      scale: 0.6,
+      opacity:0
+    })
+    tl.from(".skill", {
+      opacity: 0,
+      stagger:0.2
+    })
+
+  });
+
   return (
-    <div className="w-full overflow-hidden mt-20 text-lg font-semibold flex flex-col gap-5 justify-center">
-      <h1 className="text-3xl md:text-5xl text-center ">My Skills</h1>
-      <div className="rotate-left flex gap-5 w-max mt-5">
+    <div className="skills w-full overflow-hidden mt-20 md:text-lg font-semibold flex flex-col gap-6 justify-center">
+      <h1 className="h1skill text-3xl md:text-5xl text-center ">My Skills</h1>
+      <div className="skill rotate-left flex gap-5 w-max mt-5">
         {frontendSkills.map((skill, i) => (
           <div
             key={i}
-            className="shrink-0 px-8 py-2 items-center text-center flex gap-3 rounded-full"
+            className="shrink-0 px-2 md:px-8 py-2 items-center text-center flex gap-3 rounded-full"
           >
-            <img src={skill.logo} alt="logo" className="size-6" />
+            <img src={skill.logo} alt="logo" className="size-5 md:size-6" />
             <div>{skill.name}</div>
           </div>
         ))}
       </div>
 
-      <div className="rotate-right flex gap-5 w-max">
+      <div className="skill rotate-right flex gap-3 w-max">
         {backendSkills.map((skill, i) => (
           <div
             key={i}
-            className="shrink-0 px-8 py-2 items-center text-center flex gap-3 rounded-full"
+            className="shrink-0 px-2 md:px-8 py-2 items-center text-center flex gap-3 rounded-full"
           >
-            <img src={skill.logo} alt="logo" className="size-6" />
+            <img src={skill.logo} alt="logo" className="size-5 md:size-6" />
             <div>{skill.name}</div>
           </div>
         ))}
       </div>
 
-      <div className="rotate-left flex gap-5 w-max">
+      <div className="skill rotate-left flex gap-5 w-max">
         {tools.map((skill, i) => (
           <div
             key={i}
-            className="shrink-0 px-8 py-2 items-center text-center flex gap-3 rounded-full"
+            className="shrink-0 px-2 md:px-8 py-2 items-center text-center flex gap-3 rounded-full"
           >
-            <img src={skill.logo} alt="logo" className="size-6" />
+            <img src={skill.logo} alt="logo" className="size-5 md:size-6" />
             <div>{skill.name}</div>
           </div>
         ))}
       </div>
 
-      <div className="rotate-right flex gap-5 w-max">
+      <div className="skill rotate-right flex gap-5 w-max">
         {languages.map((skill, i) => (
           <div
             key={i}
-            className="shrink-0 px-8 py-2 items-center text-center flex gap-3 rounded-full"
+            className="shrink-0 px-2 md:px-8 py-2 items-center text-center flex gap-3 rounded-full"
           >
-            <img src={skill.logo} alt="logo" className="size-6"/>
+            <img src={skill.logo} alt="logo" className="size-5 md:size-6" />
             <div>{skill.name}</div>
           </div>
         ))}

@@ -56,8 +56,14 @@ const App = () => {
           <Route path="/about" element={<>
             <ParticleAnimation />
           <About/></>} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<>
+            <ParticleAnimation />
+            <Contact />
+          </>} />
+          <Route path="/projects" element={<>
+            <ParticleAnimation />
+            <Projects/>
+          </>} />
         </Routes>
       </div>
 
