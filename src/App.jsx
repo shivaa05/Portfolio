@@ -11,6 +11,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import RainAnimation from "./components/animations/RainAnimation";
 import ParticleAnimation from "./components/animations/ParticleAnimation";
+import Scroll from "./components/Scroll";
 gsap.registerPlugin(useGSAP);
 const App = () => {
   const { darkMode } = useMyStore();
@@ -34,14 +35,8 @@ const App = () => {
   //   };
   // }, []);
   return (
-    <div className="text-white min-h-screen min-w-full bg relative">
-      {/* <div
-        ref={boxRef}
-        className="cursor absolute -top-30 -left-36 size-40 rounded-full"
-      ></div> */}
-
-
-
+    <div className="text-white min-h-screen min-w-full bg relative overflow-x-hidden">
+      <Scroll/>
       <Navbar />
 
       <div className="pt-20 pb-40 overflow-hidden px-2 md:px-[10vw]">
