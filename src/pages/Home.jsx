@@ -5,10 +5,12 @@ import { TextPlugin } from "gsap/TextPlugin";
 import { FileDown, GithubIcon } from "lucide-react";
 import HomeContact from "../components/HomeComponents/HomeContact";
 import Skills from "../components/HomeComponents/Skills";
+import { useNavigate } from "react-router-dom";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(useGSAP, TextPlugin);
 const Home = () => {
+  const navigate = useNavigate("")
   const [index, setIndex] = useState(0);
   const heroTexts = [
     "Passionate Developer",
@@ -224,12 +226,12 @@ const Home = () => {
         </p>
 
         <div className="follow mt-15 md:mt-8 text-lg md:text-2xl font-semibold flex gap-5 md:gap-8">
-          <div className="border px-3 py-1 md:py-2 md:px-4 rounded-2xl  bg-[rgb(21,23,32)] flex gap-2 items-center w-44 justify-center">
+          <div className="cursor-pointer border px-3 py-1 md:py-2 md:px-4 rounded-2xl  bg-[rgb(21,23,32)] flex gap-2 items-center w-44 justify-center" onClick={()=>navigate("/projects")}>
             <GithubIcon /> Projects
           </div>
-          <div className="border px-3 py-1 md:py-2 md:px-4 rounded-2xl  bg-[rgb(21,23,32)] flex gap-2 items-center w-44 justify-center">
+          <a href="./Shiva-Resume.pdf" download className="cursor-pointer border px-3 py-1 md:py-2 md:px-4 rounded-2xl  bg-[rgb(21,23,32)] flex gap-2 items-center w-44 justify-center" >
             <FileDown /> Resume
-          </div>
+          </a>
         </div>
       </div>
 

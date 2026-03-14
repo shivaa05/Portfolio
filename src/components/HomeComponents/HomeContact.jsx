@@ -1,6 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useNavigate } from "react-router-dom";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const HomeContact = () => {
@@ -29,6 +30,8 @@ const HomeContact = () => {
       opacity:0.6
     })
   });
+
+  const navigate = useNavigate("")
   return (
     <div className="homeContact w-full mt-10 flex justify-center items-center flex-col">
       <div className="problem text-[30px] md:text-[50px] font-bold">
@@ -40,7 +43,7 @@ const HomeContact = () => {
         hearing proposals and growing together.
       </div>
 
-      <button className="mt-10 text-lg md:text-xl font-semibold border px-8 py-2 rounded-xl bg-[rgb(12,12,20)] cursor-pointer">
+      <button className="mt-10 text-lg md:text-xl font-semibold border px-8 py-2 rounded-xl bg-[rgb(12,12,20)] cursor-pointer" onClick={()=>navigate("/contact") }>
         Contact me
       </button>
     </div>

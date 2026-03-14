@@ -6,7 +6,7 @@ const ProjectContainer = ({project,index}) => {
     <a
       href={project.link}
       target="blank"
-      className="w-full border rounded-xl border-zinc-500/30  md:p-6 p-4 hover:bg-[radial-gradient(circle,rgba(50,20,100,0.2),transparent_70%)] duration-500 hover:scale-101 "
+      className="w-full border rounded-3xl border-zinc-500/30  md:p-6 p-4 hover:bg-[radial-gradient(circle,rgba(50,20,100,0.2),transparent_70%)] duration-500 hover:scale-101 "
     >
       <img src="" alt="" />
       <div className="flex gap-4 items-center ">

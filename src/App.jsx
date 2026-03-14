@@ -40,6 +40,8 @@ const App = () => {
         className="cursor absolute -top-30 -left-36 size-40 rounded-full"
       ></div> */}
 
+
+
       <Navbar />
 
       <div className="pt-20 pb-40 overflow-hidden px-2 md:px-[10vw]">

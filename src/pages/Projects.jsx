@@ -10,7 +10,7 @@ const Projects = () => {
           My Development Journey
         </div>
 
-        <div className="mt-5 text-center text-[7vw] md:text-[68px] font-bold md:leading-19 md:max-w-[70vw] lg:max-w-[45vw]">
+        <div className="mt-5 text-center text-[7vw] md:text-[4vw] font-bold md:leading-19 md:max-w-[70vw] lg:max-w-[45vw]">
           Projects That Define My Craft
         </div>
 

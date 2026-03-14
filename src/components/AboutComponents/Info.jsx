@@ -28,7 +28,7 @@ const Info = () => {
   ];
   return (
     <div className="w-full mt-10 md:grid gap-5 md:grid-cols-2">
-      <div className="border border-gray-900 rounded-3xl px-3 py-5 md:px-5 flex flex-col gap-4">
+      <div className="border border-gray-900 rounded-4xl px-3 py-5 md:px-5 flex flex-col gap-4">
         <div>STORY</div>
         <h1 className="text-3xl md:text-5xl font-bold">About me</h1>
         <p>
@@ -59,7 +59,7 @@ const Info = () => {
         </p>
       </div>
 
-      <div className="border border-gray-900 rounded-3xl px-3 py-5 md:px-5 flex flex-col gap-4 ">
+      <div className="border border-gray-900 rounded-4xl px-3 py-5 md:px-5 flex flex-col gap-4 ">
         <div>SKILLS</div>
         <h1 className="text-3xl md:text-5xl font-bold">My skillset</h1>
         <p>
@@ -107,7 +107,7 @@ const Info = () => {
           ))}
         </div>
       </div>
-      <div className="border border-gray-900 rounded-3xl px-3 py-5 md:px-5 flex flex-col gap-4 ">
+      <div className="border border-gray-900 rounded-4xl px-3 py-5 md:px-5 flex flex-col gap-4 ">
         <div>VALUE</div>
         <h1 className="text-3xl md:text-5xl font-bold">What drives me</h1>
 
@@ -166,7 +166,7 @@ const Info = () => {
         </div>
       </div>
 
-      <div className="border border-gray-900 rounded-3xl px-3 py-5 md:px-5 flex flex-col gap-4 ">
+      <div className="border border-gray-900 rounded-4xl px-3 py-5 md:px-5 flex flex-col gap-4 ">
         <div>CURRENTLY</div>
         <h1 className="text-3xl md:text-5xl font-bold">What I am up to</h1>
 

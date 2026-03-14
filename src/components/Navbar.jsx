@@ -48,8 +48,8 @@ const Navbar = () => {
     })
   },[navExpanded])
   return (
-    <div className="w-full fixed px-5 text-sm py-3 md:px-[10vw] md:py-5 md:text-lg font-semibold  md:font-bold flex justify-between items-center bg-black/60 backdrop-blur-sm z-100">
-      <div className="left">CodeWithShiva</div>
+    <div className="w-full fixed px-5 text-sm py-3 md:px-[10vw] md:py-5 md:text-lg font-semibold  md:font-bold flex justify-between items-center bg-black/60 backdrop-blur-sm z-50">
+      <div className="left" ><Link to={"/"}>CodeWithShiva</Link></div>
 
       <div className="right hidden md:flex gap-[4vw]">
         <Link
