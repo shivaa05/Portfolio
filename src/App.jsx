@@ -1,18 +1,19 @@
-import React, { useEffect, useRef } from 'react'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import { Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import About from './pages/About'
-import Contact from './pages/Contact'
-import Projects from './pages/Projects'
-import useMyStore from './store/useMyStore'
+import React, { useEffect, useRef } from "react";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Projects from "./pages/Projects";
+import useMyStore from "./store/useMyStore";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import RainAnimation from './components/RainAnimation'
+import RainAnimation from "./components/animations/RainAnimation";
+import ParticleAnimation from "./components/animations/ParticleAnimation";
 gsap.registerPlugin(useGSAP);
 const App = () => {
-  const { darkMode } = useMyStore()
+  const { darkMode } = useMyStore();
   // const boxRef = useRef(null);
 
   // useEffect(() => {
@@ -38,25 +39,31 @@ const App = () => {
         ref={boxRef}
         className="cursor absolute -top-30 -left-36 size-40 rounded-full"
       ></div> */}
-        <RainAnimation/>
+
       <Navbar />
 
-      <div className="py-20 overflow-hidden px-2 md:px-[10vw]">
+      <div className="pt-20 pb-40 overflow-hidden px-2 md:px-[10vw]">
         <Routes>
           <Route
             path="/"
-            element={<Home/>}
+            element={
+              <>
+                <RainAnimation />
+                <Home />
+              </>
+            }
           />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<>
+            <ParticleAnimation />
+          <About/></>} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
-
       </div>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
-}
+};
 
-export default App 
+export default App;
