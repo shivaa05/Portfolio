@@ -81,7 +81,7 @@ const Form = ({ setMailSend }) => {
           <input
             type="text"
             className="border w-full bg-[#121216] border-[#17181C] rounded-md py-1.5 md:py-2 px-4  outline-none placeholder-white"
-            placeholder="Your company/college (Optional)"
+            placeholder="Your Projecct"
             required
             value={projectType}
             onChange={(e) => setProjectType(e.target.value.trim())}
